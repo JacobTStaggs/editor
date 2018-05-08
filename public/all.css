@@ -1,0 +1,493 @@
+html{
+    margin:auto;
+}
+
+body{
+    background: url("../pictures/weenies/5thirds222.png");
+    background-repeat: repeat-y;
+    -webkit-background-size: contain;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    max-width: 100%;
+    overflow-x: hidden;
+    background-size: contain;
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+}
+
+h1{
+    font-family: 'Amatic SC', cursive;
+    background-image: url("../pictures/burgers/woodLabel.png");
+    max-width: 1049px;
+    background-repeat: no-repeat;
+    font-size: 6vw;
+    color: yellow;
+    text-shadow: 4px 4px black;
+    text-align: center;
+    letter-spacing: 12px;
+    margin: auto;
+    margin-top: 2%;
+    width: 80%;
+        -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+h2{
+    font-family: 'Amatic SC', cursive;
+    background-image: url("../pictures/burgers/woodLabel.png");
+    background-position: center -10px;
+    height: 57px;
+    max-width: 1049px;
+    background-repeat: no-repeat;
+    font-size: 2.5em;
+    color: yellow;
+    text-shadow: 4px 4px black;
+    text-align: center;
+    letter-spacing: 7px;
+    margin: auto;
+    margin-top: 2%;
+    width: 80%;
+        -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+h3{
+    font-family: 'Amatic SC', cursive;
+    background-repeat: no-repeat;
+    background-image: url("../pictures/burgers/woodLabel.png");
+    color: yellow;
+    font-size: 25px;
+    text-shadow: 3px 3px black;
+    text-align: center;
+    margin:auto;
+    margin-top: 2px;
+    width: 55%;
+        -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+#page1 {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center space-around;
+        margin: 0;
+}
+#page2{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center space-around;
+    margin: 0;
+}
+#page3 {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center space-around;
+        margin: 0;
+}
+#page4 {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center space-around;
+        margin: 0;
+}
+
+
+.background{
+  background-image: url('./pictures/weenies/longpaper.png');
+  -webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;
+background-repeat: no-repeat;
+}
+
+
+.flex-row{
+  flex-wrap: row wrap;
+  width: 100%;
+}
+
+.flex-grid > * {
+  padding: 10px;
+  flex: 1 100%;
+}
+
+.col {
+}
+
+li{
+  margin: 10px 0;
+  margin-left: 5px;
+}
+
+.brewextra{
+  height: auto;
+  float: right;
+  position: relative;
+  left: 5%;
+  width: 55%;
+}
+
+
+.brewitems{
+  margin: 10px 0;
+  margin-left: 5px;
+}
+
+.items{
+  margin: 10px 0;
+  margin-left: 5px;
+}
+
+.paper{
+    background-repeat: repeat-y;
+    background-size: 71em 68em;
+    padding-left: 30px;
+    padding-bottom: 15px;
+    padding-top: 10px;
+    max-width: 1080px;
+    min-width: 280px;
+    width: 85%;
+    height: auto;
+    margin: auto;
+    display: table;
+}
+
+.row1{
+    width: 90%;
+    height: auto;
+    margin: auto;
+}
+.row2-left{
+    width: 40%;
+    height: auto;
+    margin: auto;
+}
+.row2-right{
+    width: 40%;
+    height: auto;
+    margin: auto;
+}
+
+
+/*PAGE 1 CLASSES*/
+.logo1{
+    margin-bottom: 5%;
+    margin-top: 5%;
+}
+.logopage1{
+    position: relative;
+    display: block;
+    /* margin-left: 10%; */
+    margin: auto;
+    margin-top: -5%;
+    margin-bottom: -15%;
+    max-width: 510px;
+    min-width: 320px;
+    width: 90%;
+}
+.grubheader{}
+.comboheader{
+
+    letter-spacing: 7.5px;
+}
+.combospaper{}
+.wetyerwisselheader{}
+.wisselpaper{}
+.brewskiesheader{width: 65%;}
+.brewskiespaper{
+  width: 90%;
+}
+.brewimg{
+  height: 80%;
+  width: 85%;
+  position: relative;
+  display: block;
+  margin: 0 auto;
+  bottom: 500px;
+}
+
+
+
+
+
+
+/*PAGE 2 CLASSES*/
+.weenies{}
+.weeniespaper{
+    column-count: 1;
+}
+.instagram img{
+    position: relative;
+    max-width: 40%;
+    margin-left: 66%;
+    margin-top: -14%;
+    margin-bottom: -10%;
+}
+
+/*PAGE 3 CLASSES*/
+.dippers{
+    padding-top: 1px;
+}
+.dipperspaper {
+    column-count: 2;
+}
+.homewreckers{
+    position: relative;
+    margin: 0 auto;
+    width: 65%
+    text-align: center;
+}
+.homewreckerpaper{
+    column-count: 1;
+    display: inline-flex;
+    flex-wrap: wrap;
+}
+.pickyerpaper{
+    display: inline-flex;
+    flex-wrap: wrap;
+}
+.homewrecker-img img{
+    position: relative;
+    display: block;
+    /* margin-left: 10%; */
+    margin: auto;
+    margin-bottom: -5%;
+    margin-top: -5%;
+    max-width: 510px;
+    min-width: 320px;
+    width: 90%;
+}
+.youngins{}
+.younginpaper{
+    display: inline-flex;
+    flex-wrap: wrap;
+}
+.youngins-img img{
+    position: relative;
+    max-width: 50%;
+    margin-left: 50%;
+    margin-top: -11%;
+    margin-bottom: -25%;
+}
+.burgers{}
+.burgerspaper{
+    margin-top: -4%;
+    display: inline-flex;
+    flex-wrap: wrap;
+}
+
+/*PAGE 4 CLASSES*/
+.subsheader{}
+.subsNSandwichespaper{}
+.henhouseheader{}
+.henpaper{}
+.deezertsheader{}
+.deezertspaper{}
+.logo4 img{
+    position: relative;
+    display: block;
+    /* margin-left: 10%; */
+    margin: auto;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    max-width: 510px;
+    min-width: 320px;
+    width: 50%;
+}
+
+.centerimage{
+  margin-bottom: -20%;
+}
+.rabbitheader{}
+.rabbitFixinspaper{}
+.xtraheader{}
+.xtrapaper{}
+
+
+@media screen and (max-width: 1340px){
+  .brewimg{
+    bottom: 300px;
+  }
+}
+
+/*>1024*/
+    @media screen and (min-width: 1024px) {
+
+        h2{
+
+
+        }
+        .itemTitle{
+            font-size: 17px;
+        }
+        h3{
+            letter-spacing: 3px;
+        }
+    }
+
+/*1024>x>860*/
+    @media screen and (max-width: 1024px) and (min-width: 860px) {
+        h2{
+            font-size: 4.4vw;
+        }
+        h3{
+            letter-spacing: 3px;
+        }
+    }
+
+/*<860*/
+    @media screen and (max-width: 860px) {
+        h2{
+            font-size: 32px;
+        }
+        h3{
+            letter-spacing: 1px;
+        }
+
+        .brewimg{
+          bottom: 200px;
+        }
+    }
+
+/*>660*/
+    @media screen and (min-width: 660px) {
+        h2{
+            min-width: 313px;
+        }
+        .col {
+            flex: 1 auto;
+        }
+        .weeniespaper{
+            column-count: 2;
+        }
+        .dipperitems{
+            column-count: 2;
+        }
+        .itemTitle{
+            font-size: 15px;
+        }
+    }
+
+
+
+/*<660*/
+@media screen and (max-width:660px){
+  .centerimage{
+    margin-bottom: 0%;
+  }
+  .brewimg{
+    bottom: 0px;
+  }
+    h1{
+        min-width: 313px;
+        font-size: 32px;
+    }
+    h2{
+        min-width: 313px;
+        margin-bottom: -2%;
+    }
+    .page3{
+        flex-direction: column;
+    }
+    .row2-left{
+        width: 90%;
+    }
+    .row2-right{
+        width: 90%;
+    }
+    .logopage1{
+        margin-bottom: 5%;
+    }
+    .grubheader{
+        font-size: -webkit-xxx-large;
+    }
+    .instagram img{
+        max-width: 100%;
+        margin-left: -5%;
+        margin-top: -25%;
+        margin-bottom: -30%;
+    }
+    .dippers{
+        padding-top: 2%;
+        font-size: 30px;
+        letter-spacing: 10px;
+    }
+    .burgers {
+    margin-top: 7%;
+    }
+
+    .brewextra{
+      margin: 0 auto;
+      float: none;
+      width: 100%;
+    }
+}
+
+/*@media screen and (max-width:531px){}*/
+
+@media screen and (max-width: 321px) {
+    body{
+        margin-left: 3.5%
+    }
+    h1{
+        margin-left: -8%;
+    }
+    h2{
+        margin-left: -20px;
+    }
+    .paper{
+        margin-left: -6.6%;
+    }
+    .logopage1{
+        margin-left: -10%;
+    }
+    .homewreckers{
+        margin-left: -7%;
+    }
+}
+
+.homewrecker > .background{
+  height: 300px;
+}
+
+/*margin-top: 2%;*/
+.items{
+  font-size: 1.5em;
+    width:100%;
+    margin-bottom: 5px;
+    display: table-row;
+    display: inline-flex;
+    flex-wrap: wrap;
+}
+
+.itemTitle{
+    width: 80%;
+    float: left;
+    margin-bottom: 0;
+    font-weight: bolder;
+    font-size: 20px;
+}
+
+
+
+.itemDescription{
+    width: 75%;
+    font-size: 18px;
+    margin: 0;
+}
+
+
+
+.itemPrice{
+    width: 15%;
+    float: left;
+    font-size: 20px;
+    margin: 0;
+    margin-bottom: 0;
+}

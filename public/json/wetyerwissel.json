@@ -1,0 +1,6 @@
+[
+	{"item": "Pop", "Description": "Coke, Diet Coke, Cherry Coke, Coke Zero, Sprite, Sprite Zero, Mt. Dew, Diet Mt. Dew, Dr. Pepper, Diet Dr. Pepper, Root Beer, Diet Root Beer, Fanta Orange, Fanta Grape, Minute Maid Lemonade", "price": "$1.25"},
+	{"item": "Bottled Water", "Description": "Locally Sourced and Bottled in LeSage, WV Naturally regonized and awarded as one of the best tasting water in the country!", "price": "$1.25"},
+	{"item": "Gatorade", "Description": "Assorted Flavors", "price": "$1.75"},
+	{"item": "Iced-Tea", "Description": "Bottled (Sweet/Unsweet)", "price": "$2.99"}
+]

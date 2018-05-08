@@ -1,0 +1,6 @@
+[
+    {"item": "Hot Dog", "Description": "(plain, ketchup, or mustard)", "price": "$3.99"},
+    {"item": "Corn Dog", "Description": "", "price": "$4.99"},
+    {"item": "Nuggets", "Description": "", "price": "$4.99"},
+    {"item": "Meal Includes", "Description": "Capri Sun, Cookie, Candy, Goodie", "price": ""}
+]

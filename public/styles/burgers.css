@@ -1,0 +1,273 @@
+html{}
+
+body{
+    background: url("../pictures/burgers/5thirds.png");
+    background-repeat: repeat-y;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+}
+
+h2{
+    font-family: 'Amatic SC', cursive;
+    background-image: url("../pictures/burgers/woodLabel.png");
+    background-position: center -10px;
+    height: 57px;
+    max-width: 1049px;
+    background-repeat: no-repeat;
+    font-size: 5vw;
+	color: yellow;
+	text-shadow: 4px 4px black;
+	text-align: center;
+    letter-spacing: 12px;
+	margin: auto;
+    margin-top: 2%;
+	width: 80%;
+	    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+h3{
+    font-family: 'Amatic SC', cursive;
+    background-repeat: no-repeat;
+    background-image: url("../pictures/burgers/woodLabel.png");
+	color: yellow;
+    font-size: 25px;
+	text-shadow: 3px 3px black;
+	text-align: center;
+    margin:auto;
+	margin-top: 2px;
+	width: 55%;
+	    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+#page3 {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center space-around;
+        margin: 0;
+}
+
+.flex-row{
+    width: 95%;
+    margin-bottom: 1%;
+}
+
+.flex-grid > * {
+  padding: 10px;
+  flex: 1 100%;
+}
+
+.col {
+}
+
+.paper{
+    background-image: url(../pictures/burgers/longpaper.png);
+    background-repeat: no-repeat;
+    background-size: 71em 68em;
+    padding-left: 30px;
+    padding-bottom: 15px;
+    padding-top: 10px;
+    max-width: 1080px;
+    min-width: 280px;
+    width: 85%;
+    height: auto;
+    margin: auto;
+    display: table;
+}
+
+.row1{
+    width: 90%;
+    height: auto;
+    margin: auto;
+}
+.row2-left{
+    width: 40%;
+    height: auto;
+    margin: auto;
+}
+.row2-right{
+    width: 40%;
+    height: auto;
+    margin: auto;
+}
+
+.dippers{
+    padding-top: 1px;
+}
+.dipperspaper {
+    column-count: 2;
+}
+.homewreckers{
+    position: relative;
+    margin: 0 auto;
+    width: 65%
+    text-align: center;
+}
+.homewreckerpaper{
+    column-count: 1;
+    display: inline-flex;
+    flex-wrap: wrap;
+}
+.pickyerpaper{
+    display: inline-flex;
+    flex-wrap: wrap;
+}
+.homewrecker-img img{
+    position: relative;
+    display: block;
+    /* margin-left: 10%; */
+    margin: auto;
+    margin-bottom: -5%;
+    margin-top: -5%;
+    max-width: 510px;
+    min-width: 320px;
+    width: 90%;
+}
+.youngins{}
+.younginpaper{
+    display: inline-flex;
+    flex-wrap: wrap;
+}
+.youngins-img img{
+    position: relative;
+    max-width: 50%;
+    margin-left: 50%;
+    margin-top: -11%;
+    margin-bottom: -25%;
+}
+.burgers{}
+.burgerspaper{
+    margin-top: -4%;
+    display: inline-flex;
+    flex-wrap: wrap;
+}
+
+/*>1024*/
+    @media screen and (min-width: 1024px) {
+        h2{
+            font-size: 50px;
+        }
+        .itemTitle{
+            font-size: 17px;
+        }
+        h3{
+            letter-spacing: 3px;
+        }
+    }
+
+/*1024>x>860*/
+    @media screen and (max-width: 1024px) and (min-width: 860px) {
+        h2{
+            font-size: 4.4vw;
+        }
+        h3{
+            letter-spacing: 3px;
+        }
+    }
+
+/*<860*/
+    @media screen and (max-width: 860px) {
+        h2{
+            font-size: 32px;
+        }
+        h3{
+            letter-spacing: 1px;
+        }
+    }
+
+/*>660*/
+    @media screen and (min-width: 660px) {
+        h2{
+            min-width: 313px;
+        }
+        .col {
+            flex: 1 auto;
+        }
+        .dipperitems{
+            column-count: 2;
+        }
+        .itemTitle{
+            font-size: 15px;
+        }
+    }
+
+/*<660*/
+@media screen and (max-width:660px){
+    h2{
+        min-width: 313px;
+        margin-bottom: -2%;
+    }
+    .page3{
+        flex-direction: column;
+    }
+    .row2-left{
+        width: 90%;
+    }
+    .row2-right{
+        width: 90%;
+    }
+    .dippers{
+        padding-top: 2%;
+        font-size: 30px;
+        letter-spacing: 10px;
+    }
+    .burgers {
+    margin-top: 7%;
+    }
+}
+
+/*@media screen and (max-width:531px){}*/
+
+@media screen and (max-width: 321px) {
+    body{
+        margin-left: 3.5%
+    }
+    h2{
+        margin-left: -20px;
+    }
+    .paper{
+        margin-left: -6.6%;
+    }
+    .homewreckers{
+        margin-left: -7%;
+    }
+}
+
+
+.items{
+    width:100%;
+    display: table-row;
+    margin-top: 2%;
+    display: inline-flex;
+    flex-wrap: wrap;
+}
+
+.itemTitle{
+    width: 80%;
+    float: left;
+    margin-bottom: 0;
+    font-weight: bolder;
+    font-size: 13px;
+}
+
+.itemDescription{
+    width: 75%;
+    font-size: 12px;
+	margin: 0;
+}
+
+.itemPrice{
+    width: 15%;
+    float: left;
+    font-size: 13.5px;
+    margin: 0;
+    margin-bottom: 0;
+}

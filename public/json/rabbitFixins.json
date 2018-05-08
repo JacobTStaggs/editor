@@ -1,0 +1,7 @@
+[
+	{"item": "Taco Salad", "Description": "A bed of lettuce covered with Tostitos chips, homemade chili(meat based) salsa, maters, sour cream and shredded cheese.", "price": "$5.95"},
+	{"item": "Portobello Mushroom Burger (No Burger included)", "Description":"A Whole grilled portobello Mushroom with lettuce, tomato, onion, pickle, mustard, mayo, and ketchup, and cheese if wanted.", "price": "$6.99"},
+	{"item": "Don't have a Cow burger", "Description":"Vegan garden burger with lettuce, tomato, onion, pickle, mustard, mayo and ketchup, and cheese if wanted.", "price": "$6.99"},
+	{"item": "Portabello Dog (no weenie)", "Description":"A freshly sliced, grilled portobello mushroom drizzled with ranch dressing atop a few french fries on a hotdog bun, garnished with shredded cheese.", "price": "$4.10"},
+	{"item": "Lockwood Veggie Dog", "Description":"A vegan Weenie with Nacho cheese, ketchup, mustard, onion, slaw, relish, maters, lettuce, and shredded cheese.", "price": "$4.10"}
+]

@@ -1,0 +1,232 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>Menu - HillBilly Hotdogs</title>
+	    <link href="https://fonts.googleapis.com/css?family=Amatic+SC" rel="stylesheet"/>
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"> </script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="./all.css">
+        <link rel="stylesheet" type="text/css" href="./print.css">
+    </head>
+    <body>
+        <div id="page1">
+            <div class="col row2-left _50">
+                <div class="logo1">
+                    <img src="./pictures/subs/logo2.png" class="logopage1">
+                </div>
+            </div>
+            <div class="col row2-right _50">
+                <h1 class="grubheader">GRUB MENU</h1>
+            </div>
+            <div class="col row2-left _50">
+                <h2 class="comboheader">COMBOS N' SPECIALS</h2>
+                <div class="paper">
+                    <div class="combospaper background">
+                    </div>
+                </div>
+            </div>
+            <div class="col row2-right _50">
+                <h2 class="wetyerwisselheader">WET YER WISSEL</h2>
+                <div class="paper">
+                    <div class="wisselpaper background">
+                    </div>
+                </div>
+            </div>
+            <div class="flex-row">
+                <div class="brewextra">
+                    <h2 class="brewskiesheader">WE GOT THE BREWSKIES</h2>
+                    <div class="paper brew">
+
+                        <div class="brewskiespaper background">
+                        </div>
+                    </div>
+                </div>
+                <div class="brewskiesimage">
+                  <div class="centerimage">
+                    <img  class="brewimg" src="../pictures/subs/brewskies.png">
+                  </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div id="page2">
+            <div class="flex-row">
+                <div class="col row1 _100">
+                    <h2 class="weenies">WE GOT THE WEENIES</h2>
+                    <div class="paper">
+                        <div class="weeniespaper background">
+                        </div>
+                        <div class="instagram">
+                          <img src="./pictures/weenies/instagram.png">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="page3">
+            <div class="flex-row">
+                <div class="col row1 _100">
+                    <h2 class="dippers">HILLBILLY DIPPERS</h2>
+                    <div class="paper">
+                        <div class="dipperitems background">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col row2-left _50">
+                <h2 class="homewreckers">HOMEWRECKERS</h2>
+                <div class="paper">
+                    <div class="homewreckerpaper background">
+                    </div>
+                    <h3 class="pickyer">PICK YER 'WRECKER'</h3>
+                    <div class="pickyerpaper background">
+                    </div>
+                </div>
+            </div>
+            <div class="col row2-right _50">
+                <div class="homewrecker-img">
+                    <img src="./pictures/burgers/HomewreckerImg.png">
+                </div>
+            </div>
+            <div class="col row2-left _50">
+                <h2 class="youngins">YOUNGIN'S MEAL</h2>
+                <div class="paper">
+                    <div class="younginpaper background">
+                    </div>
+                    <div class="youngins-img">
+                        <img src="./pictures/burgers/kids.png">
+                    </div>
+                </div>
+            </div>
+            <div class="col row2-right _50">
+                <h2 class="burgers">BUBBA BURGERS</h2>
+                <div class="paper">
+                    <div class="burgerspaper background">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="page4">
+            <div class="col row2-left _50">
+                <h2 class="subsheader">SUBS N' SANDWICHES</h2>
+                <div class="paper">
+                    <div class="subsNSandwichespaper background">
+                    </div>
+                </div>
+                <h2 class="henhouseheader">HEN HOUSE</h2>
+                <div class="paper">
+                    <div class="henpaper background">
+                    </div>
+                </div>
+                <h2 class="deezertsheader">DEEZERTS</h2>
+                <div class="paper">
+                    <div class="deezertspaper background">
+                    </div>
+                </div>
+            </div>
+            <div class="col row2-right _50">
+                <div class="logo4">
+                    <img src="./pictures/subs/logo2.png">
+                </div>
+                <h2 class="rabbitheader">RABBIT FIXIN'S</h2>
+                <div class="paper">
+                    <div class="rabbitFixinspaper background">
+                    </div>
+                </div>
+                <h2 class="xtraheader">XTRA FIXIN'S</h2>
+                <div class="paper">
+                    <div class="xtrapaper background">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+
+
+    <script>
+    $.getJSON("./json/weenies.json", function (data) {
+        for(var i = 0; i < data.length; i++){
+           $('.weeniespaper').append('<div class="items"><p class="itemTitle">' + data[i].item  +'<p class="itemPrice"> ' + data[i].price + '</p>'+'</p><p class="itemDescription">' + data[i].Description + '</div>');
+        }
+    $('.paperitems').append('<div class="allbeef"><p id="allbeefweenies">100% ALL BEEF Weenies</p></div>')
+    $.getJSON("./json/subsNSandwiches.json", function (data) {
+      for(var i = 0; i < data.length; i++){
+        $('.subsNSandwichespaper').append('<div class="items"><p class="itemTitle">' + data[i].item + '<p class="itemPrice">' + data[i].price + '</p><br /><p class="itemDescription">' + data[i].description + '</div>');
+      }
+    });
+    $.getJSON("./json/henHouse.json", function (data) {
+      for(var i = 0; i < data.length; i++){
+        $('.henpaper').append('<div class="items4"><p class="itemTitle">' + data[i].item + '<p class="itemPrice">' + data[i].price + '</p><br /><p class="itemDescription">' + data[i].description + '</div>');
+      }
+    });
+    $.getJSON("./json/rabbitFixins.json", function (data) {
+      for(var i = 0; i < data.length; i++){
+        $('.rabbitFixinspaper').append('<div class="items4"><p class="itemTitle">' + data[i].item + '<p class="itemPrice">' + data[i].price + '</p><br /><p class="itemDescription">' + data[i].description + '</div>');
+      }
+    });
+    $.getJSON("./json/xtraFixins.json", function (data) {
+      for(var i = 0; i < data.length; i++){
+        $('.xtrapaper').append('<div class="items4"><p class="itemTitle">' + data[i].item + '<p class="itemPrice">' + data[i].price + '</p><br /><p class="itemDescription">' + data[i].description + '</div>');
+      }
+    });
+    $.getJSON("./json/deezerts.json", function (data) {
+      for(var i = 0; i < data.length; i++){
+        $('.deezertspaper').append('<div class="items4"><p class="itemTitle">' + data[i].item + '<p class="itemPrice">' + data[i].price + '</p><br /><p class="itemDescription">' + data[i].description + '</div>');
+      }
+    });
+    $.getJSON("./json/dippers.json", function(data){
+        for(var i=0; i < data.length; i++){
+            if (data[i].item != "") {
+                $('.dipperitems').append('<div class="items"><div class="itemTitle">' + data[i].item + '</div> <p class="itemPrice">' + data[i].price + '<br /> <p class="itemDescription">' + data[i].Description + '</div>');
+            }
+        }
+    });
+    $.getJSON("./json/homewrecker.json", function(data){
+        for(var i=0; i < data.length; i++){
+            if (data[i].item != "") {
+                $('.homewreckerpaper').append('<div class="items"><div class="itemTitle">' + data[i].item + '</div> <p class="itemPrice">' + data[i].price + '<br /> <p class="itemDescription">' + data[i].Description + '</div>');
+            }
+        }
+    });
+    $.getJSON("./json/pickyer.json", function(data){
+        for(var i=0; i < data.length; i++){
+            if (data[i].Description != "") {
+                $('.pickyerpaper').append('<div class="items"><div class="itemTitle">' + data[i].item + '</div> <p class="itemPrice">' + data[i].price + '<br /> <p class="itemDescription">' + data[i].Description + '</div>');
+            }
+        }
+    });
+    $.getJSON("./json/youngin.json", function(data){
+        for(var i=0; i < data.length; i++){
+            if (data[i].item != "") {
+                $('.younginpaper').append('<div class="items"><div class="itemTitle">' + data[i].item + '</div> <p class="itemPrice">' + data[i].price + '<br /> <p class="itemDescription">' + data[i].Description + '</div>');
+            }
+        }
+    });
+    $.getJSON("./json/burgers.json", function(data){
+        for(var i=0; i < data.length; i++){
+            if (data[i].item != "") {
+                $('.burgerspaper').append('<div class="items"><div class="itemTitle">' + data[i].item + '</div> <p class="itemPrice">' + data[i].price + '<br /> <p class="itemDescription">' + data[i].Description + '</div>');
+            }
+        }
+    });
+  	$.getJSON("./json/combos.json", function (data) {
+  		for(var i = 0; i < data.length; i++){
+  			$('.combospaper').append('<div class="items"><li class="itemTitle">' + data[i].item + '</li> <p class="itemPrice">' + data[i].price + '</p><br /><p class="itemDescription">' + data[i].description + '</div>');
+  		}
+  	});
+  	$.getJSON("./json/wetyerwissel.json", function (data) {
+  		for(var i = 0; i < data.length; i++){
+  			$('.wisselpaper').append('<div class="items"><li class="itemTitle">' + data[i].item + '</li> <p class="itemPrice">' + data[i].price + '</p><br /><p class="itemDescription">' + data[i].description + '</div>');
+  		}
+  	});
+  	$.getJSON("./json/brewskies.json", function (data) {
+  		for(var i = 0; i < data.length; i++){
+  			$('.brewskiespaper').append('<div class="items"><div class="itemTitle">' + data[i].item + '</div> <p class="itemPrice">' + data[i].price + '<br /> <p class="itemDescription">' + data[i].description + '</div>');
+  		}
+  	});
+    });
+    </script>
+</html>

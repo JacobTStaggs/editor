@@ -1,0 +1,572 @@
+
+@page{
+    margin: 0cm;
+}
+
+
+#page1, #page2, #page3, #page4, #page5, #page6{
+    height: 10.99in;
+    width: 5.62in;
+        margin: 0;
+}
+#page5, #page6{
+    margin: 0;
+    display: block;
+}
+
+#page1{
+    order: 4;
+}
+#page2{
+    order: 1;
+    margin-top: 0;
+}
+#page3{
+    order: 2;
+}
+#page4{
+    order: 3;
+}
+#page5{
+    order: 5;
+    padding-left: 1px;
+    padding-right: 3px;
+    background-color: white;
+}
+#page6{
+    order: 6;
+    padding-left: 1px;
+    background-color: white;
+}
+
+
+.flex-row-1{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+
+body{
+    font-size: 10px;
+    background-repeat: repeat-y;
+    background-size: cover;
+    overflow: hidden;
+}
+h1{
+    margin: 0 0;
+    padding: 0 0;
+    height: 0;
+    width: 0;
+
+    margin: auto;
+    width: 2.2in;
+    height: .7in;
+    font-size: 42px;
+    letter-spacing: 8px;
+}
+h2{
+    margin: 0 0;
+    padding: 0 0;
+    height: 0;
+    width: 0;
+
+    margin: auto;
+    width: 2.5in;
+    height: .5in;
+    text-align: center;
+    font-size: 36px;
+    letter-spacing: 6px;
+}
+h3{
+    margin: 0 0;
+    padding: 0 0;
+    height: 0;
+    width: 0;
+
+    margin: auto;
+    width: 2.5in;
+    height: .5in;
+    text-align: center;
+    font-size: 24px;
+    letter-spacing: 4px;
+}
+
+
+.paper{
+    padding-left: 0;
+
+    padding-bottom: 0;
+    padding-top: 0;
+    margin: auto;
+    margin-left: -8.5px;
+    width: 5.2in;
+}
+.row1{
+    width: 5.5in;
+}
+
+/*PAGE 1 CLASSES*/
+.logo1{
+    margin-top: .5cm;
+    margin-bottom: -20px;
+}
+.logopage1{
+    min-width: 10px;
+    max-width: 1000px;
+    width: 2.1in;
+}
+.grubheader{
+    margin-top: .5cm;
+    width: 2.3in;
+    margin-bottom: 4px;
+    background-size: 2.2in .7in;
+    line-height: 1.6em;
+    font-size: 40px;
+}
+.comboheader{
+    width: 4.1in;
+    margin-left: -.88in;
+    margin-bottom: 4px;
+    margin-top: 12px;
+    padding-bottom: 5px;
+    background-size: 2.8in .5in;
+    line-height: 1.9em;
+    font-size: 28px;
+}
+.comboppr{
+    min-width: 6cm;
+    max-width: 6cm;
+    padding: .3cm;
+    margin-left: -15px;
+    padding-top: -5px;
+    padding-bottom: -5px;
+}
+.wetyerwisselheader{
+    margin-top: 20px;
+    width: 4.1in;
+    margin-left: -.88in;
+    margin-bottom: 4px;
+    padding-bottom: 5px;
+    background-size: 2.4in .5in;
+    line-height: 1.6em;
+    font-size: 34px;
+}
+.wetppr{
+    min-width: 6cm;
+    max-width: 6cm;
+    padding: .3cm;
+    margin-left: -20px;
+    padding-top: -5px;
+    padding-bottom: -5px;
+}
+.brewimg{
+    margin-left: -18px;
+    height: 5.3in;
+    width: 5.6in;
+    bottom: 507.5px;
+}
+.brewskiesheader{
+    width: 4.1in;
+    margin-bottom: 4px;
+    margin-left: -.67in;
+    padding-bottom: 5px;
+    background-size: 3.0in .5in;
+    line-height: 1.9em;
+    font-size: 27px;
+}
+.brewextra{
+    width: 60%;
+    left: 8%;
+}
+.brewppr{
+    min-width: 7.3cm;
+    max-width: 7.3cm;
+    padding: .12cm;
+}
+.brewskiespaper{
+    margin-right: -2px;
+    padding-left: .27cm;
+
+}
+
+
+/*PAGE 2 CLASSES*/
+.wnppr{
+    margin-left: 3px;
+}
+.weenies{
+    width: 4.1in;
+    margin-bottom: 4px;
+    margin-left: 45px;
+    padding-bottom: 5px;
+    background-size: 3.5in .5in;
+    line-height: 1.6em;
+    font-size: 34px;
+}
+.weeniespaper{
+    column-count: 2;
+    width: 5in;
+    margin-left: 10px;
+    padding: .1cm;
+    padding-bottom: 1cm;
+}
+.instagram img{
+    position: relative;
+    width: 580px;
+    height: 180px;
+    margin-left: 310px;
+    margin-top: -500px;
+    margin-bottom: -40px;
+}
+.weeniesitems{
+    margin-top: 5px;
+}
+
+
+/*PAGE 3 CLASSES*/
+.dippers{
+    padding: 0;
+
+    width: 4.1in;
+    margin-bottom: 4px;
+    margin-left: 45px;
+    padding-bottom: 5px;
+    background-size: 3.1in .5in;
+    line-height: 1.6em;
+    font-size: 34px;
+}
+.dpppr{
+    margin-left: 0px;
+    padding: .15cm;
+    padding-left: .2cm;
+    padding-bottom: 0px;
+}
+.dipperspaper {
+    font-size: 11px;
+    padding: .1cm;
+}
+.dipperitems{
+    column-count: 2;
+}
+.homewreckers{
+    width: 4.1in;
+    margin-bottom: 4px;
+    margin-left: -2.1cm;
+    padding-bottom: 5px;
+    background-size: 2.4in .5in;
+    line-height: 1.6em;
+    font-size: 34px;
+}
+.homewreckerpaper{
+    margin-left: 7px;
+}
+.hwppr{
+    min-width: 2.6in;
+    max-width: 2.6in;
+    margin-left: -14px;
+    padding: .1cm;
+}
+.pickyer{
+    background-size: 2.3in .3in;
+    line-height: 1.4em;
+    font-size: 18px;
+    margin-bottom: -20px;
+}
+.pickyerpaper{
+    margin-left: 7px;
+}
+.pyppr{
+    min-width: 6cm;
+    max-width: 6cm;
+}
+.homewrecker-img img{
+    position: absolute;
+    min-width: 10px;
+    max-width: 1000px;
+    width: 20%;
+    margin-top: -210px;
+    margin-left: -65px;
+}
+.hwitemDescription{
+    width: 90%;
+    font-size: 10px;
+}
+.younginsec{
+    margin-top: 15px;
+    margin-left: 50px;
+}
+.youngins{
+    width: 4.1in;
+    margin-bottom: 4px;
+    margin-left: -1.1in;
+    padding-bottom: 5px;
+    background-size: 2.6in .5in;
+    line-height: 1.6em;
+    font-size: 34px;
+}
+.yippr{
+    min-width: 5cm;
+    max-width: 5cm;
+    padding: .2cm;
+}
+.younginpaper{}
+.burgersection{
+    margin-top: -85px;
+    margin-left: -.525cm;
+}
+.burgers{
+    margin-left: -5px;
+    margin-top: 2.5px;
+}
+.brgppr{
+    padding: .15cm;
+    max-width: 6.3cm;
+    min-width: 6.3cm;
+    height: 5cm;
+}
+.burgerspaper{
+    margin-top: 0px;
+}
+
+
+/*PAGE 4 CLASSES*/
+.subssec{
+    margin-top: 0px;
+}
+.subsheader{
+    width: 4.1in;
+    margin-bottom: 4px;
+    margin-left: -.8in;
+    padding-bottom: 5px;
+    background-size: 2.95in .5in;
+    line-height: 1.6em;
+    font-size: 29px;
+}
+.subppr{
+    min-width: 6cm;
+    max-width: 6cm;
+    padding: .2cm;
+}
+.henhouseheader{
+    margin-top: 10px;
+    width: 4.1in;
+    margin-left: -.85in;
+    margin-bottom: 4px;
+    padding-bottom: 5px;
+    background-size: 2.1in .5in;
+    line-height: 1.6em;
+    font-size: 34px;
+}
+.henppr{
+    min-width: 6cm;
+    max-width: 6cm;
+    padding: .2cm;
+}
+.deezertsheader{
+    margin-top: 10px;
+    width: 4.1in;
+    margin-left: -.85in;
+    margin-bottom: 4px;
+    padding-bottom: 5px;
+    background-size: 2in .5in;
+    line-height: 1.6em;
+    font-size: 34px;
+}
+.deeppr{
+    min-width: 6cm;
+    max-width: 6cm;
+    padding: .2cm;
+}
+.rabbitheader{
+    margin-top: 15px;
+    width: 4.1in;
+    margin-left: -.85in;
+    margin-bottom: 4px;
+    padding-bottom: 5px;
+    background-size: 2.4in .5in;
+    line-height: 1.6em;
+    font-size: 34px;
+}
+.rabsec{}
+.logo4 img{
+    min-width: 175px;
+    max-width: 175px;
+}
+.rabppr{
+    min-width: 6cm;
+    max-width: 6cm;
+    padding: .2cm;
+}
+.xtraheader{
+    margin-top: 10px;
+    width: 4.1in;
+    margin-left: -.85in;
+    margin-bottom: 4px;
+    padding-bottom: 5px;
+    background-size: 2.2in .5in;
+    line-height: 1.6em;
+    font-size: 34px;
+}
+.xtrappr{
+    min-width: 6cm;
+    max-width: 6cm;
+    padding: .2cm;
+}
+.xtrapaper{
+    margin-top: -.5cm;
+}
+
+/*PAGE 5 CLASSES*/
+.ssk-pic img{
+    min-width: 5.55in;
+    max-width: 5.55in;
+    margin-left: -1px;
+}
+.rect img{
+    margin-top: -.9in;
+    margin-left: .325in;
+    margin-bottom: -15px;
+    max-height: 1.8in;
+    min-height: 1.8in;
+    max-width: 4.75in;
+    min-width: 4.75in;
+    background-size: 1.5in 1cm;
+}
+.labelText{
+    margin-left: -.1in;
+    margin-top: -1.2in;
+    font-size: 27.5px;
+    font-weight: 1000;
+    text-align: center;
+}
+
+.backText{
+    margin-top: -6px;
+}
+.backpaper{}
+.backPara{
+    font-size: 14px;
+    text-align: left;
+    margin-top: 0px;
+    margin-bottom: -4px;
+}
+.author{
+    font-size: 14px;
+    text-align: center;
+}
+
+.songppr{
+    width: 3.5in;
+    margin-left: 1.06in;
+    border: 3.5px solid black;
+}
+.songHeader{
+    margin-top: -9px;
+    margin-bottom: -1px;
+    font-size: 35px;
+    font-weight: 2500;
+    text-align: center;
+}
+.songItem{
+    margin-bottom: -5px;
+}
+.songText{
+    margin: auto;
+}
+.songPara{
+    font-size: 15px;
+    text-align: center;
+    margin-top: 3px;
+    margin-bottom: -14px;
+}
+.songFinish{
+    font-size:18px;
+    font-weight: 1000;
+    text-align: center;
+    margin-bottom: 3px;
+}
+.iceCream{
+    font-size: 16.5px;
+    text-align: center;
+}
+
+
+/*PAGE 6 CLASSES*/
+.title-logo img{
+    min-width: 3in;
+    max-width: 3in;
+    margin-top: 1cm;
+    margin-bottom: -.2cm;
+    margin-left: 1.31in;
+}
+.add{
+    font-size:35px;
+    font-weight:900;
+    text-align: center;
+}
+.titleText{
+    font-size:15px;
+    text-align: center;
+}
+.hammock-pic img{
+    width: 5in;
+    margin-left: .31in;
+    margin-top: 0in;
+}
+
+/*ITEMS*/
+.items{
+    margin-bottom: 7.65px;
+}
+.itemTitle{
+    font-size: 14px;
+    margin-bottom: 1px;
+}
+.itemPrice{
+    font-size: 13px;
+}
+.itemDescription{
+    font-size: 10px;
+    width: 80%;
+}
+
+/*Burger Items*/
+.brgItem{}
+.brgTitle{
+    font-size: 13px;
+}
+.brgPrice{
+    font-size: 12.5px;
+}
+.brgDescription{
+    font-size: 9.5px;
+}
+
+/*xtraItems*/
+.xItems{
+    margin-bottom: -3px;
+}
+.xTitle{font-size: 12px;}
+.xPrice{
+    font-size: 10.5px;
+    margin-left: -20px;
+}
+.xDescription{font-size: 9px;}
+
+/*Beverage Items*/
+.bItems{}
+.bTitle{
+    font-size: 13px;
+}
+.bPrice{
+    font-size: 11px;
+}
+.bDescription{
+    font-size: 9.5px;
+}
+
+@media print {
+ /* All your print styles go here */
+ #header, #footer, #nav { display: none !important; }
+}

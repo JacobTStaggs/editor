@@ -1,0 +1,8 @@
+[
+	{"item": "Barnyard Bird Dog", "Description": "Fried Chicken on a hot dog bun with American cheese, pickles and BBQ sauce", "price": "$3.79"},
+	{"item": "BS Roosters' Hen House", "Description": "Hot dog bun filed with nacho cheese with chicken tender covered homemade chili Sauce and topped off with shredded cheese.", "price": "$3.59"},
+	{"item": "Fried Chicken Sandwich", "Description": "(Regular or Spicy) Lettuce, maters and mayo", "price": "$6.99"},
+	{"item": "Grilled Chicken Sandwich", "Description": "Lettuce, maters and mayo", "price": "$6.99"},
+	{"item": "Chicken Nuggets (6)", "Description": "", "price": "$3.50"},
+	{"item": "Pisol. Pete's Chicken Pram", "Description": "Chicken tender on a hot dog bun with mozzarella cheese stick covered with mozzarella sauce and shredded cheese.", "price": "$3.99"}
+]

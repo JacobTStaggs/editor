@@ -1,0 +1,21 @@
+[
+    {"item": "Beer Barter Onion Rings (Full Order)", "Description": "", "price": "$5.89"},
+    {"item": "Beer Batter Onion Rings (1/2 Order)", "Description": "", "price": "$3.49"},
+    {"item": "French Fries", "Description": "", "price": "$2.39"},
+    {"item": "Cheese Fries", "Description": "", "price": "$4.59"},
+    {"item": "Chili Cheese Fries", "Description": "", "price": "$5.19"},
+    {"item": "Garlic Ranch Fries", "Description": "", "price": "$5.59"},
+    {"item": "Garlic Bluegrass Cheese Fries", "Description": "", "price": "$5.59"},
+    {"item": "Add Real Bacon Bits to any fries", "Description": "", "price": "$1.00"},
+    {"item": "Chicken Nuggets", "Description": "", "price": "$3.50"},
+    {"item": "Chicken Tenders", "Description": "", "price": "$5.89"},
+    {"item": "Chips", "Description": "", "price": "$0.89"},
+    {"item": "Cheese Nachos", "Description": "", "price": "$3.49"},
+    {"item": "Boss Hog Nachos", "Description": "Tostito chips covered with meat sauce, nacho cheese, jalapenos, sour cream, salsa, shredded lettuce, shredded cheese, and maters.", "price": "$7.99"},
+    {"item": "", "Description": "Mozzarella Cheese Sticks", "price": "$5.89"},
+    {"item": "Deep Friend Pickles w/Ranch", "Description": "", "price": "$5.89"},
+    {"item": "Deep Fried Mushrooms w/Ranch", "Description": "", "price": "$5.89"},
+    {"item": "Jalapeno Poppers w/Ranch", "Description": "", "price": "$5.89"},
+    {"item": "Zucchini Stix w/Ranch", "Description": "", "price": "$5.89"},
+    {"item": "Mac Wedges", "Description": "", "price": "$5.89"}
+]

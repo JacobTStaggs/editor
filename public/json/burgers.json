@@ -1,0 +1,9 @@
+[
+    {"item": "Big Bad Bubba's Baby Sister Bertha's Baby Burger", "Description": "(1/4 Pound)", "price": "$6.25"},
+    {"item": "Big Bad Bubba's Baby Sister Bertha's Burger", "Description": "(1/3 Pound)", "price": "$7.25"},
+    {"item": "Big Bad Bubba Burger", "Description": "(1/2 Pound)", "price": "$8.25"},
+    {"item": "Big Bad Double Hubba Hubba Bubba Bacon Burger", "Description": "(Double Meat, Cheese & Bacon)", "price": "$12.99"},
+    {"item": "Bubba's Single Wide", "Description": "(5 Pounds, feeds 12)", "price": "$42.00"},
+    {"item": "Bubba's Double Wide", "Description": "(17 Pounds, feeds 34)", "price": "$90.00"},
+    {"item": "Bubba's Triple Wide", "Description": "(30 Pounds, feeds 50)", "price": "$150.00"}
+]
