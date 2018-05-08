@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <div class="jumbotron" style="text-align: center;">
+      <h3>Here are all of the items from <%=choice%></h3>
+      <table class="table">
+                       <thead>
+                         <tr>
+                               <th style="text-align:center">Item Name</th>
+                               <th style="text-align:center">Item Description</th>
+                               <th style="text-align:center">Item Price</th>
+                               <th style="text-align:center">Actions</th>
+                         </tr>
+                       </thead>
+                         <tbody>
+                           <%for(var i=0; i<item.length; i++) {%>
+                               <tr>
+                                     <td>
+                                       <%= item[i].name %>
+                                     </td>
+                                     <td>
+                                      <%= item[i].Description%>
+                                     </td>
+                                     <td>
+                                       <%= item[i].price%>
+                                     </td>
+                                     <td>
+                                        <a class="btn btn-success" href="/edit/<%=item[i]._id%>">Edit</a>
+                                      </td>
+                          <%}%>
+                         </tbody>
+                     </table>
+    </div>
+  </body>
+</html>
