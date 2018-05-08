@@ -11,12 +11,12 @@ MongoClient.connect(mongoDB, (err, client) => {
 });
 
 /* GET home page. */
-router.get('/', function(req, res, next) {
-  res.render('index', {});
+router.get('/editor', function(req, res, next) {
+  res.render('editor.ejs', {});
 });
 
 /* GET home page. */
-router.post('/', function(req, res, next) {
+router.post('/editor', function(req, res, next) {
   var filter = req.body.filter;
   db.collection("items").find({section: req.body.filter}).toArray(function(err, results){
     res.render('list.ejs', { choice: filter, item: results });
@@ -68,7 +68,7 @@ router.get('/delete/(:id)', function(req, res) {
         }, function(err) {
           if (err) return handleError(err);
           console.log("deleted");
-          res.redirect("/")
+          res.redirect("/editor")
         });
       }
     }
@@ -97,7 +97,7 @@ router.post('/edit/(:id)', function(req, res) {
         }, function(err) {
 
           console.log("success");
-          res.redirect('/');
+          res.redirect('/editor');
         });
       }
     }
@@ -139,6 +139,11 @@ router.get('/homewrecker', function(req, res){
     res.send(results);
   });
 })
+router.get('/xtra', function(req, res){
+  db.collection("items").find({section: 'xtra'}).toArray(function(err, results){
+    res.send(results);
+  });
+})
 router.get('/pick', function(req, res){
   db.collection("items").find({section: 'pick'}).toArray(function(err, results){
     res.send(results);
@@ -174,7 +179,12 @@ router.get('/youngins', function(req, res){
 
 router.post('/addItem', function(req, res, next){
     db.collection('items').save({section: req.body.section, item: req.body.name, Description: req.body.Description, price: req.body.price});
-    res.redirect('/');
+    res.redirect('/editor');
+})
+
+
+router.get('/Menu', function(req, res, next){
+  res.sendFile(__dirname + 'index.html');
 })
 
 module.exports = router;

@@ -174,7 +174,7 @@
 
 
     <script>
-    $.getJSON("../json/weenies.json", function (data) {
+    $.getJSON("/weenies", function (data) {
         for(var i = 0; i < data.length; i++){
            $('.weeniespaper').append('<div class="items weeniesitems"><div class="itemTitle">' + data[i].item  +'</div> <p class="itemPrice"> ' + data[i].price + '</p>'+'<p class="itemDescription">' + data[i].Description + '</div>');
         }
