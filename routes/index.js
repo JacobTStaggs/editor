@@ -1,4 +1,5 @@
 var express = require('express');
+var cors = require('cors');
 var router = express.Router();
 const MongoClient = require('mongodb').MongoClient;
 var mongoDB = 'mongodb://127.0.0.1/HBHD';
@@ -104,72 +105,72 @@ router.post('/edit/(:id)', function(req, res) {
   });
 });
 
-router.get('/brewskies', function(req, res){
+router.get('/brewskies',cors(), function(req, res){
   db.collection("items").find({section: 'brew'}).toArray(function(err, results){
     res.send(results);
   });
 })
-router.get('/burgers', function(req, res){
+router.get('/burgers',cors(), function(req, res){
   db.collection("items").find({section: 'burg'}).toArray(function(err, results){
     res.send(results);
   });
 })
-router.get('/combos', function(req, res){
+router.get('/combos', cors(), function(req, res){
   db.collection("items").find({section: 'comb'}).toArray(function(err, results){
     res.send(results);
   });
 })
-router.get('/Deezerts', function(req, res){
+router.get('/Deezerts',cors(), function(req, res){
   db.collection("items").find({section: 'deez'}).toArray(function(err, results){
     res.send(results);
   });
 })
-router.get('/dippers', function(req, res){
+router.get('/dippers',cors(), function(req, res){
   db.collection("items").find({section: 'dip'}).toArray(function(err, results){
     res.send(results);
   });
 })
-router.get('/henhouse', function(req, res){
+router.get('/hen', cors(),function(req, res){
   db.collection("items").find({section: 'hen'}).toArray(function(err, results){
     res.send(results);
   });
 })
-router.get('/homewrecker', function(req, res){
+router.get('/homewrecker',cors(), function(req, res){
   db.collection("items").find({section: 'home'}).toArray(function(err, results){
     res.send(results);
   });
 })
-router.get('/xtra', function(req, res){
+router.get('/xtra',cors(), function(req, res){
   db.collection("items").find({section: 'xtra'}).toArray(function(err, results){
     res.send(results);
   });
 })
-router.get('/pick', function(req, res){
+router.get('/pick',cors(), function(req, res){
   db.collection("items").find({section: 'pick'}).toArray(function(err, results){
     res.send(results);
   });
 })
-router.get('/rabbit', function(req, res){
+router.get('/rab',cors(), function(req, res){
   db.collection("items").find({section: 'rab'}).toArray(function(err, results){
     res.send(results);
   });
 })
-router.get('/subs', function(req, res){
+router.get('/subs',cors(), function(req, res){
   db.collection("items").find({section: 'subs'}).toArray(function(err, results){
     res.send(results);
   });
 })
-router.get('/Weenies', function(req, res){
+router.get('/weenies',cors(), function(req, res){
   db.collection("items").find({section: 'wee'}).toArray(function(err, results){
     res.send(results);
   });
 })
-router.get('/wet', function(req, res){
+router.get('/wet',cors(), function(req, res){
   db.collection("items").find({section: 'wet'}).toArray(function(err, results){
     res.send(results);
   });
 })
-router.get('/youngins', function(req, res){
+router.get('/youngins',cors(), function(req, res){
   db.collection("items").find({section: 'youn'}).toArray(function(err, results){
     res.send(results);
   });
