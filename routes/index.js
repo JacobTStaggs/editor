@@ -52,6 +52,29 @@ router.get('/edit/(:id)', function(req, res, next) {
   });
 });
 
+router.get('/delete/(:id)', function(req, res) {
+
+  var o_id = new ObjectId(req.params.id).toString();
+  console.log("Delete get method");
+
+  db.collection('items').find().toArray(function(err, results) {
+
+    for (var i = 0; i < results.length; i++) {
+  console.log("Made it here: " +results[i]);
+      if (results[i]._id == o_id) {
+        console.log("Made it here: " +results[i]);
+        db.collection('items').deleteOne({
+          "_id": results[i]._id
+        }, function(err) {
+          if (err) return handleError(err);
+          console.log("deleted");
+          res.redirect("/")
+        });
+      }
+    }
+  });
+});
+
 router.post('/edit/(:id)', function(req, res) {
 
   var o_id = new ObjectId(req.params.id).toString();
@@ -67,7 +90,7 @@ router.post('/edit/(:id)', function(req, res) {
           "_id": results[i]._id
         }, {
           $set: {
-            "name": req.body.name,
+            "item": req.body.name,
             "Description": req.body.Description,
             "price": req.body.price
           }
@@ -150,7 +173,7 @@ router.get('/youngins', function(req, res){
 
 
 router.post('/addItem', function(req, res, next){
-    db.collection('items').save({section: req.body.section, name: req.body.name, Description: req.body.Description, price: req.body.price});
+    db.collection('items').save({section: req.body.section, item: req.body.name, Description: req.body.Description, price: req.body.price});
     res.redirect('/');
 })
 

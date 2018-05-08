@@ -20,7 +20,7 @@
                            <%for(var i=0; i<item.length; i++) {%>
                                <tr>
                                      <td>
-                                       <%= item[i].name %>
+                                       <%= item[i].item %>
                                      </td>
                                      <td>
                                       <%= item[i].Description%>
@@ -30,6 +30,7 @@
                                      </td>
                                      <td>
                                         <a class="btn btn-success" href="/edit/<%=item[i]._id%>">Edit</a>
+                                          <a href="/delete/<%=item[i]._id%>" class="btn btn-danger">Remove</a>
                                       </td>
                           <%}%>
                          </tbody>
