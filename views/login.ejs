@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <%- include breadcrumb.ejs %>
+    <div class="jumbotron" style="text-align: center; width: 50%; margin: 0 auto;">
+      <h4 style="text-align:center">Login</h4>
+      <form method="post">
+      <div>
+      <input type="email"  class="form-group" name="email" placeholder="Email"></input>
+    </div>
+  <div>
+      <input type="password"  class="form-group" name="password" placeholder="Password"></input>
+    </div>
+      <button type="submit" class="btn btn-success">Log in</button>
+    </form>
+    </div>
+  </body>
+</html>

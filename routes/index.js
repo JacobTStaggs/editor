@@ -53,6 +53,10 @@ router.get('/edit/(:id)', function(req, res, next) {
   });
 });
 
+router.get('/login', function(req, res){
+  res.render('login.ejs')
+})
+
 router.get('/delete/(:id)', function(req, res) {
 
   var o_id = new ObjectId(req.params.id).toString();

@@ -5,9 +5,11 @@
     <link rel='stylesheet' href='/stylesheets/style.css' />
   </head>
   <body>
-    <div class="jumbotron" style="text-align: center;">
+      <%- include breadcrumb.ejs %>
+    <div class="jumbotron" style="text-align: center; margin: 0 auto; width: 50%;">
       <h1>Greetings,</h1>
-      <p>Please select an option from the dropdown list below</p>
+      <p>To see a list of all items from a certain section, please choose an option from the drop dropdown
+      below. After selecting the option please click "Show Items"</p>
       <form method="post">
       <select name="filter">
         <option value="brew">Brewskies</option>
@@ -28,6 +30,7 @@
       <button type="submit" class="btn btn-success">Show Items</button>
       <hr />
       <div>
+        <p>To add a new item, please click the button below</p>
             <a href="/addItem" class="btn btn-success">New Item</a>
       </div>
     </form>

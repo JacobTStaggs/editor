@@ -5,10 +5,11 @@
     <link rel='stylesheet' href='/stylesheets/style.css' />
   </head>
   <body>
-    <div class="jumbotron" style="text-align: center;">
-      <p>Please fill out the forms below</p>
+    <%- include breadcrumb.ejs %>
+    <div class="jumbotron" style="text-align: center; width: 50%; margin: 0 auto;">
+      <p>Please fill out the form below</p>
       <form method="post">
-      <select name="section">
+      <select class="form-group" name="section">
         <option value="brew">Brewskies</option>
         <option value="burg">Burgers</option>
         <option value="comb">Combos</option>
@@ -24,9 +25,15 @@
         <option value="youn">Youngin</option>
         <option value="xtra">XtraFixins</option>
       </select>
-      <input type="text" name="name" placeholder="Amazing Food Name"></input>
-      <input type="text" name="Description" placeholder="Description of item"></input>
-      <input type="text" name="price" placeholder="$4.99"></input>
+      <div>
+      <input type="text"  class="form-group" name="name" placeholder="Amazing Food Name"></input>
+    </div>
+  <div>
+      <input type="text"  class="form-group" name="Description" placeholder="Description of item"></input>
+    </div>
+  <div>
+      <input type="text" class="form-group" name="price" placeholder="$4.99"></input>
+    </div>
       <button type="submit" class="btn btn-success">Add new item</button>
     </form>
     </div>
